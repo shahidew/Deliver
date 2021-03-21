@@ -1,0 +1,121 @@
+body{
+    background-image: url("chuttersnap-0M5URHZ_f3k-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: Cursive;
+    text-shadow: 1px 1px 7px #ffffff;
+    color: #ffcc00;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+#about{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 300px;
+    width: 600px;
+    border-style: hidden;
+    line-height: 2.5;
+}
+h3{
+    font-family: Serif;
+    letter-spacing: 1px;
+    tab-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff0000;
+
+}
+p{
+    letter-spacing: 1px;
+    font-family: Sans-serif;
+    tab-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+#links{
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    height: 100px;
+    width: 550px;
+    border-style: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+}
+#c:link, #c:visited {
+    background-color: #fbb000;
+    color: #000012;
+    border-radius: 12px;
+    padding: 18px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: Rubik, sans-serif;
+}
+
+#c:hover, #c:active {
+    background-color: #fbb334;
+}
+
+#e:link, #e:visited {
+    background-color: #fbb000;
+    color: #000012;
+    border-radius: 12px;
+    padding: 18px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: Rubik, sans-serif;
+
+}
+
+#e:hover, #e:active {
+    background-color: #fbb334;
+}
+
+#contact{
+    position: absolute;
+    top: 750px;
+    right: 70px;
+    height: 300px;
+    width: 550px;
+    border: hidden;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+}
+
+h5{
+    font-family: Serif;
+    font-size: x-large;
+    letter-spacing: 1px;
+    tab-size: 100px;
+    text-align: center;
+    color: #0cbaba;
+}
+
