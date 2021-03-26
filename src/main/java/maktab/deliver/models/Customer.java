@@ -1,19 +1,39 @@
 package maktab.deliver.models;
 
-import sun.security.util.Password;
-
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "customers")
 public class Customer {
+
+    @Column(name="First Name")
     private String name;
+
+    @Column(name = "Last Name")
     private String family;
+
+    @Id
+    @Column(name = "User Name" ,unique = true)
     private String userName;
+
+    @Column(name="Email", unique=true)
     private String email;
+
+    @Column(name="Phone Number", unique = true)
     private Number phone;
+
+    @Column(name="Address")
     private String address;
+
+    @Column(name="Postal Code")
     private Number postalCode;
-    private Password password;
+
+    @Column(name="Password", unique = true)
+    private String password;
+
+    @ManyToOne(cascade = CascadeType.ALL, targetEntity = Deliver.class)
     private List<Deliver> delivers = new ArrayList<Deliver>();
 
     public List<Deliver> getDelivers() {
@@ -27,7 +47,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String name, String family, String userName, String email, Number phone, String address, Number postalCode, Password password) {
+    public Customer(String name, String family, String userName, String email, Number phone, String address, Number postalCode, String password) {
         this.name = name;
         this.family = family;
         this.userName = userName;
@@ -66,7 +86,7 @@ public class Customer {
         return postalCode;
     }
 
-    public Password getPassword() {
+    public String getPassword() {
         return password;
     }
 
