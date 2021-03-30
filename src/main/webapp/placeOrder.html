@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Delivery</title>
+</head>
+<body>
+<form action="order" method="post" name="Delivery" onsubmit="return isValid()">
+    <div class="title">New Delivery</div>
+    <div class="fields">
+        <label for="state" accesskey="s">State / City Of Origin:</label><br>
+        <select name="state" id=state" class="sin state">
+            <option value="">-- choose one --
+            <optgroup label="Tehran">
+                <option value="Tehran">Tehran
+                <option value="Shahriar">Shahriar
+                <option value="Lavasan">Lavasan
+                <option value="Damavand">Damavand
+                <option value="Varamin">Varamin
+            </optgroup><optgroup label="Razavi Khorasan">
+            <option value="Sabzevar">Sabzevar
+            <option value="Mashhad">Mashhad
+            <option value="Gonabad">Gonabad
+            <option value="Neyshabur">Damavand
+            <option value="Tous">Tous
+        </optgroup><optgroup label="Isfahan">
+            <option value="Najafabad">Najafabad
+            <option value="Natanz">Natanz
+            <option value="Isfahan">Isfahan
+            <option value="Zarinshahr">Zarinshahr
+            <option value="Ghamsar">Ghamsar
+        </optgroup><optgroup label="Mazandaran">
+            <option value="Sari">Sari
+            <option value="Amol">Amol
+            <option value="Babol">Babol
+            <option value="Nur">Nur
+            <option value="Ramsar">Ramsar
+        </optgroup>
+        </select><br>
+        <label for="origin">Origin Address:</label><br>
+        <input type="text" id="origin" name="origin" class="sin fname"><br>
+        <label for="city" accesskey="s">State / City Of Destination:</label><br>
+        <select name="city" id=city" class="sin state">
+            <option value="">-- choose one --
+            <optgroup label="Tehran">
+                <option value="Tehran">Tehran
+                <option value="Shahriar">Shahriar
+                <option value="Lavasan">Lavasan
+                <option value="Damavand">Damavand
+                <option value="Varamin">Varamin
+            </optgroup><optgroup label="Razavi Khorasan">
+            <option value="Sabzevar">Sabzevar
+            <option value="Mashhad">Mashhad
+            <option value="Gonabad">Gonabad
+            <option value="Neyshabur">Damavand
+            <option value="Tous">Tous
+        </optgroup><optgroup label="Isfahan">
+            <option value="Najafabad">Najafabad
+            <option value="Natanz">Natanz
+            <option value="Isfahan">Isfahan
+            <option value="Zarinshahr">Zarinshahr
+            <option value="Ghamsar">Ghamsar
+        </optgroup><optgroup label="Mazandaran">
+            <option value="Sari">Sari
+            <option value="Amol">Amol
+            <option value="Babol">Babol
+            <option value="Nur">Nur
+            <option value="Ramsar">Ramsar
+        </optgroup>
+        </select><br>
+        <label for="destination">Destination Address:</label><br>
+        <input type="text" id="destination" name="destination" class="sin lname"><br>
+        <label for="name">Receiver First Name:</label><br>
+        <input type="text" id="name" name="name" class="sin email"><br>
+        <label for="family">Receiver Last Name:</label><br>
+        <input type="text" id="family" name="family" class="sin phone"><br>
+        <label for="phone">Receiver Phone:</label><br>
+        <input type="text" id="phone" name="phone" class="sin phone"><br>
+        <label for="weight">Weight:</label><br>
+        <input type="text" id="weight" name="weight" class="sin phone"><br>
+        <input type="radio" id="docu" name="typeOfTransport" value="docu">
+        <label for="docu">Document</label><br>
+        <input type="radio" id="non_document" name="typeOfTransport" value="non_document">
+        <label for="non_document">NON_DOCUMENT</label><br>
+        <label for="packageContent">Package Content:</label><br>
+        <input type="text" id="packageContent" name="packageContent" class="sin phone"><br>
+        <label for="packageLength">Package Length:</label><br>
+        <input type="number" id="packageLength" name="packageLength" class="sin phone"><br>
+        <label for="packageWidth">Package Width:</label><br>
+        <input type="number" id="packageWidth" name="packageWidth" class="sin phone"><br>
+        <label for="packageHeight">Package Height:</label><br>
+        <input type="number" id="packageHeight" name="packageHeight" class="sin phone"><br>
+    </div>
+
+</form>
+
+<button onclick="setPriceByPremium(weight)">Premium</button>
+<p id = "Premium">Price is :</p>
+
+<button onclick="setPriceByGold(weight)">Gold</button>
+<p id = "Gold">Price is :</p>
+
+<button onclick="setPriceBySilver(weight)">Silver</button>
+<p id = "Silver">Price is :</p>
+
+
+<button class="btn" onclick="placeOrder.js">Sinup</button>
+
+<script src="placeOrder.js"></script>
+
+</body>
+</html>
