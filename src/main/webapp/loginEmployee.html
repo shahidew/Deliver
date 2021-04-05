@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyleEmp.css">
+</head>
+<body>
+<form action="loginEmployee" method="post" name="myForm" onsubmit="return isValid()">
+    <div class="title">Login</div>
+    <label for="user">User name</label><br>
+    <input type="text" id="user" name="user" class="user"><br>
+    <label for="pass">Password</label><br>
+    <input type="password" id="pass" name="pass" class="pass" ><br>
+    <button class="btn">login</button>
+
+</form>
+
+<script src="loginValidationEm.js"></script>
+</body>
+</html>
